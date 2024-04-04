@@ -35,7 +35,40 @@
     width: 200px;
 }
 
-#krug {
-    background-color: greenyellow;
-    width: 100px;
+.krug1 {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: gray solid 1px;
+
 }
+
+.krug2 {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: gray solid 1px;
+
+}
+
+.krug3 {
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: gray solid 1px;
+
+}
+
+.active{
+    border: black solid 3px;
+}
+
+
+.block__krug{
+    display: flex;
+    
+}
+
