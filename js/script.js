@@ -33,7 +33,7 @@ const krug3 = document.querySelector('.krug3')
 
 let krugs =['krug1', 'krug2', 'krug3']
 
-let imgs = ['/img/DSC_3674.jpg', '/img/les.webp', '/img/tomato.jpg']
+let imgs = ['img/DSC_3674.jpg', 'img/les.webp', 'img/tomato.jpg']
 
 
 image.src = imgs[0]
