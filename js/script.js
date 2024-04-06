@@ -46,17 +46,21 @@ right2.addEventListener('click', (e) => {
     }
     image.src = imgs[i]
     if(i == 0){
+        krug2.classList.remove('active')
         krug3.classList.remove('active')
         krug1.classList.add('active')
     }
     if(i == 1){
+        krug3.classList.remove('active')
         krug1.classList.remove('active')
         krug2.classList.add('active')
     }
     if(i == 2){
+        krug1.classList.remove('active')
         krug2.classList.remove('active')
         krug3.classList.add('active')
     }
+
 })
 
 left2.addEventListener('click', (e) => {
@@ -67,14 +71,17 @@ left2.addEventListener('click', (e) => {
     }
     image.src = imgs[i]
     if(i == 0){
+        krug2.classList.remove('active')
         krug1.classList.remove('active')
         krug3.classList.add('active')
     }
     if(i == 1){
+        krug3.classList.remove('active')
         krug2.classList.remove('active')
         krug1.classList.add('active')
     }
     if(i == 2){
+        krug1.classList.remove('active')
         krug3.classList.remove('active')
         krug2.classList.add('active')
     }
