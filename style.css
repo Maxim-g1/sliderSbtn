@@ -5,6 +5,7 @@
 
 
 .slider-text {
+
     display: flex;
 }
 
@@ -18,57 +19,58 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: blue solid 2px;
+    border-radius: 20%;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 50px;
 }
 
 .slider-img {
     display: flex;
+    align-items: center;
+    column-gap: 20px;
 }
 
 #slider2 {
     width: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 #image {
     width: 200px;
+    height: 150px;
 }
 
-.krug1 {
+
+
+.indicator {
     background-color: white;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     border: gray solid 1px;
 
-}
-
-.krug2 {
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: gray solid 1px;
 
 }
 
-.krug3 {
-    background-color: white;
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    border: gray solid 1px;
-
-}
-
-.active{
+.active {
     border: black solid 3px;
 }
 
 
-.block__krug{
+.block__krug {
     display: flex;
-    
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    column-gap: 5px;
+
 }
 
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

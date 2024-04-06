@@ -27,16 +27,30 @@ left.addEventListener('click', (e) => {
 
 
 const image = document.querySelector('#image')
-const krug1 = document.querySelector('.krug1')
-const krug2 = document.querySelector('.krug2')
-const krug3 = document.querySelector('.krug3')
+let block__krug = document.querySelector('.block__krug')
+let indicator
 
-let krugs =['krug1', 'krug2', 'krug3']
-
-let imgs = ['/img/DSC_3674.jpg', '/img/les.webp', '/img/tomato.jpg']
+let imgs = ['img/DSC_3674.jpg', 'img/les.webp', 'img/tomato.jpg']
 
 
 image.src = imgs[0]
+
+
+for (let kr of imgs) {
+    indicator = document.createElement('li')
+    block__krug.appendChild(indicator)
+    indicator.classList.add('indicator')
+}
+let indicatorList = document.querySelectorAll('.indicator')
+
+indicatorList[0].classList.add('active')
+
+function indicatorActive(i) {
+    for (let op of indicatorList) {
+        op.classList.remove('active')
+    }
+    indicatorList[i].classList.add('active')
+}
 
 right2.addEventListener('click', (e) => {
     e.preventDefault()
@@ -45,23 +59,10 @@ right2.addEventListener('click', (e) => {
         i = 0
     }
     image.src = imgs[i]
-    if(i == 0){
-        krug2.classList.remove('active')
-        krug3.classList.remove('active')
-        krug1.classList.add('active')
-    }
-    if(i == 1){
-        krug3.classList.remove('active')
-        krug1.classList.remove('active')
-        krug2.classList.add('active')
-    }
-    if(i == 2){
-        krug1.classList.remove('active')
-        krug2.classList.remove('active')
-        krug3.classList.add('active')
-    }
-
+    indicatorActive(i)
 })
+
+
 
 left2.addEventListener('click', (e) => {
     e.preventDefault()
@@ -70,21 +71,6 @@ left2.addEventListener('click', (e) => {
         i = imgs.length - 1
     }
     image.src = imgs[i]
-    if(i == 0){
-        krug2.classList.remove('active')
-        krug1.classList.remove('active')
-        krug3.classList.add('active')
-    }
-    if(i == 1){
-        krug3.classList.remove('active')
-        krug2.classList.remove('active')
-        krug1.classList.add('active')
-    }
-    if(i == 2){
-        krug1.classList.remove('active')
-        krug3.classList.remove('active')
-        krug2.classList.add('active')
-    }
 
 })
 
